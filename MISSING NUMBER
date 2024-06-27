@@ -1,0 +1,29 @@
+Q --> MISSING NUMBER
+LINK --> https://hive.smartinterviews.in/contests/smart-interviews-basic/problems/the-missing-number?page=0&pageSize=10
+
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN.
+         Print output to STDOUT. Your class should be named Main. */
+         Scanner sc = new Scanner(System.in);
+         int [] arr = new int[100];
+         for(int i=1;i<100;i++)
+         {
+             arr[i] = sc.nextInt();
+         }
+         int total = (100*(100+1))/2;
+         int sum = 0;
+         for(int i=1;i<100;i++)
+         {
+             sum = sum +arr[i];
+
+         }
+         System.out.println(total-sum);
+
+         
+    }
+}
