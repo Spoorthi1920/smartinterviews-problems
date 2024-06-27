@@ -1,0 +1,39 @@
+Q  --> FIRST AND LAST OCCURENCE OF AN ARRAY
+LINK --> https://hive.smartinterviews.in/contests/smart-interviews-basic/problems/first-and-last?page=0&pageSize=10
+
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. 
+        Print output to STDOUT. Your class should be named Main. */
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int [] a = new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i] = sc.nextInt();
+        }
+        int x = sc.nextInt();
+        int first = -1;
+        int last = -1;
+        for(int i=0;i<n;i++)
+        {
+            if(a[i]== x)
+            {
+                if(first== -1)
+                {
+                
+                
+                first = i;
+                }
+                last = i;
+            }
+            
+        }
+        System.out.print(first+" "+last);
+        
+    }
+}
