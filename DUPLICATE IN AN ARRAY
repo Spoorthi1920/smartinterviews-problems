@@ -1,0 +1,33 @@
+Q --> DUPLICATES IN AN ARRAY
+LINK --> https://hive.smartinterviews.in/contests/smart-interviews-basic/problems/find-duplicate-number-in-array?page=0&pageSize=10
+
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT.
+         Your class should be named Main. */
+         Scanner sc = new Scanner(System.in);
+         int n = sc.nextInt();
+         int [] arr = new int[n];
+         for(int i=0;i<n;i++)
+         {
+             arr[i] = sc.nextInt();
+         }
+         for(int i=0;i<n;i++)
+         {
+             for(int j=i+1;j<n;j++)
+             {
+                 if(arr[i]==arr[j])
+                 {
+                     System.out.print(arr[i]);
+
+                 }
+             }
+             
+         }
+        
+    }
+}
